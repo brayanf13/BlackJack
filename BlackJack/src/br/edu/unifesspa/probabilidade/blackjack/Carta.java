@@ -11,7 +11,7 @@ public class Carta {
 	}
 	
 	public boolean isVazio() {
-		return (quantidade <= 0);
+		return (quantidade == 0);
 	}
 	
 }

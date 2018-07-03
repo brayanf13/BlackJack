@@ -18,20 +18,22 @@ public class Baralho {
 
 	public ArrayList<Carta> inicializa(){
 		ArrayList<Carta> baralho = new ArrayList<Carta>();
+		
+		
 
-		baralho.add(new Carta(TiposCarta.catarA));
-		baralho.add(new Carta(TiposCarta.catar2));
-		baralho.add(new Carta(TiposCarta.catar3));
-		baralho.add(new Carta(TiposCarta.catar4));
-		baralho.add(new Carta(TiposCarta.catar5));
-		baralho.add(new Carta(TiposCarta.catar6));
-		baralho.add(new Carta(TiposCarta.catar7));
-		baralho.add(new Carta(TiposCarta.catar8));
-		baralho.add(new Carta(TiposCarta.catar9));
-		baralho.add(new Carta(TiposCarta.catar10));
-		baralho.add(new Carta(TiposCarta.catarJ));
-		baralho.add(new Carta(TiposCarta.catarQ));
-		baralho.add(new Carta(TiposCarta.catarK));
+		baralho.add(new Carta(TiposCarta.cartaA));
+		baralho.add(new Carta(TiposCarta.carta2));
+		baralho.add(new Carta(TiposCarta.carta3));
+		baralho.add(new Carta(TiposCarta.carta4));
+		baralho.add(new Carta(TiposCarta.carta5));
+		baralho.add(new Carta(TiposCarta.carta6));
+		baralho.add(new Carta(TiposCarta.carta7));
+		baralho.add(new Carta(TiposCarta.carta8));
+		baralho.add(new Carta(TiposCarta.carta9));
+		baralho.add(new Carta(TiposCarta.carta10));
+		baralho.add(new Carta(TiposCarta.cartaJ));
+		baralho.add(new Carta(TiposCarta.cartaQ));
+		baralho.add(new Carta(TiposCarta.cartaK));
 		 
 		return baralho;
 	}
