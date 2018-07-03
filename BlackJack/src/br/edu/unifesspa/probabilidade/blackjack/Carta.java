@@ -21,4 +21,12 @@ public class Carta {
 		this.valor--;
 		return new Carta(this.valor, 1);
 	}
+	
+	public void addValor() {
+		this.valor++;
+	}
+	
+	public int getQuantidade() {
+		return this.quantidade;
+	}
 }

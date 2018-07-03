@@ -8,9 +8,31 @@ public class Jogador {
 	private double chanceDeVencer;
 	private ArrayList<Carta> cartas;
 	
-	public Jogador(int pontos, double chanceDe21, double chanceDeVencer) {
-		this.pontos = pontos;
-		this.chanceDe21 = chanceDe21;
-		this.chanceDeVencer = chanceDeVencer;
+	public Jogador() {
+		cartas = new ArrayList<Carta>();
 	}
+	
+	public boolean compraCarta(Carta carta) {
+		for(Carta c : this.cartas) {
+			if(c.getValor() == carta.getValor()) {
+				c.addValor();
+				return true;
+			}
+		}
+		this.cartas.add(carta);
+		this.pontos += carta.getValor();
+		
+		return true;
+	}
+
+	public int getPontos() {
+		return pontos;
+	}
+
+	public void setPontos(int pontos) {
+		this.pontos = pontos;
+	}
+	
+	
+	
 }
