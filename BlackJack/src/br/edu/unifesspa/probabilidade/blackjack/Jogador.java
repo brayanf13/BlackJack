@@ -33,6 +33,4 @@ public class Jogador {
 		this.pontos = pontos;
 	}
 	
-	
-	
 }

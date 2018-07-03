@@ -23,20 +23,6 @@ public class Baralho {
 		return cartas;
 	}
 	
-	public Carta removerCarta(String valor) {
-		if (valor.toUpperCase() == "J" || valor.toUpperCase() == "Q" || valor.toUpperCase() == "K")
-			valor = "10";
-		else if(valor.toUpperCase() == "A")
-			valor = "1";
-			
-		for (Carta carta : this.cartas) {
-			if(carta.getValor() == Integer.parseInt(valor)) {
-				return carta.tiraUm();
-			}
-		}
-		return null;
-	}
-	
 	public ArrayList<Carta> getCartas(){
 		
 		return this.cartas;
